@@ -1,0 +1,4 @@
+dataset:
+  name: cifar10
+  data_dir: data/cifar10
+  num_classes: 10

@@ -1,0 +1,20 @@
+seed: 42
+
+dataset:
+  name: cifar10
+  data_dir: data/cifar10
+  num_classes: 10
+
+backbone: resnet18
+num_folds: 5
+
+batch_size: 128
+num_epochs: 30
+lr: 1.0e-4
+weight_decay: 1.0e-4
+optimizer: AdamW
+scheduler: cosine
+early_stopping_patience: 5
+mixed_precision: true
+
+img_size: 32
