@@ -1,9 +1,23 @@
+"""
+CIFAR10 (official train + official test)
+                ↓
+           Merge all data
+                ↓
+      StratifiedKFold(n_splits=5)
+                ↓
+ Fold 0: Train(80%) + Val(20%)
+ Fold 1: Train(80%) + Val(20%)
+ Fold 2: Train(80%) + Val(20%)
+ Fold 3: Train(80%) + Val(20%)
+ Fold 4: Train(80%) + Val(20%)
+"""
+
 from torchvision.datasets import CIFAR10
-from torch.utils.data import Dataset, Subset
+from torch.utils.data import Dataset
 from sklearn.model_selection import StratifiedKFold
 import numpy as np
 
-from src.datasets.base import BaseDatasetAdapter
+from src.pre.datasets.base import BaseDatasetAdapter
 
 
 class CIFAR10Adapter(BaseDatasetAdapter):

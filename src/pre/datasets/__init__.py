@@ -1,4 +1,4 @@
-from src.datasets.cifar10 import CIFAR10Adapter
+from src.pre.datasets.cifar10 import CIFAR10Adapter
 
 DATA_REGISTRY = {
     "cifar10": CIFAR10Adapter,
