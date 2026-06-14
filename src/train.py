@@ -79,7 +79,7 @@ def run(mode: str, cfg: dict):
             pin_memory=True,
         )
 
-        model = build_model(cfg, mode=mode)
+        model = build_model(cfg, mode=mode).to(device)
         
         gacf_controller = None
         if mode == "gacf":
