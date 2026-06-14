@@ -17,4 +17,4 @@ scheduler: cosine
 early_stopping_patience: 5
 mixed_precision: true
 
-img_size: 32
+img_size: 224

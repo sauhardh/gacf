@@ -10,3 +10,9 @@ wheels/
 .venv
 *.zip
 *.zip
+*.jpg
+*.pdf
+
+checkpoints/
+wandb/
+cifar10/
